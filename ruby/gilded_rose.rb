@@ -12,6 +12,9 @@ class GildedRose
             item.quality = item.quality - 1
           end
         end
+        if item.name == "Conjured"
+          item.quality = item.quality - 2
+        end
       else
         if item.quality < 50
           item.quality = item.quality + 1
